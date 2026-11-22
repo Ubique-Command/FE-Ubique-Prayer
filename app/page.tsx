@@ -1,3 +1,3 @@
-import { HomePage } from "@/screens/home";
+import { EntryScreen } from "@/screens/entry";
 
-export default HomePage;
+export default EntryScreen;
