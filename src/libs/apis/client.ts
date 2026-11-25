@@ -6,8 +6,3 @@ export const apiClient = axios.create({
   timeout: 10_000,
 });
 
-apiClient.interceptors.response.use(
-  (response) => response,
-  (error: unknown) => Promise.reject(error),
-);
-
