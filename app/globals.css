@@ -8,7 +8,7 @@
 @import "@mantine/core/styles/Title.css";
 
 :root {
-  --app-shell-max-width: 40rem;
+  --app-shell-max-width: 85.375rem;
   --page-gutter: 1rem;
 }
 
@@ -37,17 +37,10 @@ body {
   background: var(--mantine-color-body);
 }
 
-@media (min-width: 48rem) {
+/* 태블릿과 분할 화면에서는 가용 너비에 맞춰 안쪽 여백을 늘린다. */
+@media (min-width: 37.5rem) {
   :root {
-    --app-shell-max-width: 54rem;
-    --page-gutter: 1.5rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  :root {
-    --app-shell-max-width: 64rem;
-    --page-gutter: 2rem;
+    --page-gutter: clamp(1rem, 3vw, 2.5rem);
   }
 }
 
